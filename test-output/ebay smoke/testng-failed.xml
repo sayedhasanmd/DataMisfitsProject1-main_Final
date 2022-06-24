@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ebay smoke]">
+  <parameter name="os" value="windows"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.ebay.com"/>
+  <test thread-count="5" name="tests(failed)">
+    <classes>
+      <class name="apps.ebay.AddcartPageTest">
+        <methods>
+          <include name="afterEachTestMethod"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- apps.ebay.AddcartPageTest -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [ebay smoke] -->
